@@ -1,8 +1,8 @@
 import cv2
 import tensorflow as tf
 
-# Load your trained model
-model = tf.keras.models.load_model('emotion_detection_model-master.pd')
+# Assuming model is already loaded and trained
+model.save('emotion_detection_model.h5')
 
 # Emotion categories (adjust according to your model's training data)
 emotion_categories = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
